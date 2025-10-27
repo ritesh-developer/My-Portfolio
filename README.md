@@ -140,14 +140,6 @@ You can deploy the built `dist/` folder to any static hosting:
 
 ---
 
-## 📞 Contact
-
-- Name: Ritesh Kumar
-- Email: riteshraj.developer@gmail.com
-- LinkedIn: https://www.linkedin.com/in/ritesh8/
-- Phone: +91 9060025222
-
----
 
 ## 📝 License
 
