@@ -3,9 +3,25 @@ import { useState, useEffect } from 'react';
 
 function Home() {
   const [isVisible, setIsVisible] = useState(false);
+  const [displayText, setDisplayText] = useState('');
+  const fullText = 'Ritesh Kumar  ';
+  const typingSpeed = 100; // milliseconds per character
 
   useEffect(() => {
     setIsVisible(true);
+    
+    // Typing animation
+    let currentIndex = 0;
+    const typingInterval = setInterval(() => {
+      if (currentIndex <= fullText.length) {
+        setDisplayText(fullText.substring(0, currentIndex));
+        currentIndex++;
+      } else {
+        clearInterval(typingInterval);
+      }
+    }, typingSpeed);
+
+    return () => clearInterval(typingInterval);
   }, []);
 
   const skills = [
@@ -23,7 +39,7 @@ function Home() {
         <div className="hero-content">
           <div className="greeting">Hello, I'm</div>
           <h1 className="hero-title">
-            <span className="highlight typing-animation">Ritesh Kumar</span>
+            <span className="highlight typing-animation">{displayText}</span>
           </h1>
           <p className="hero-subtitle">
             Software Engineer & DevOps Enthusiast

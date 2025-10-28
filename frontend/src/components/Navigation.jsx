@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 
-function Navigation() {
+function Navigation({ darkMode, toggleDarkMode }) {
   const location = useLocation();
 
   // Don't show navigation on admin pages
@@ -46,6 +46,15 @@ function Navigation() {
             >
               Contact
             </Link>
+          </li>
+          <li className="nav-item">
+            <button 
+              onClick={toggleDarkMode} 
+              className="theme-toggle"
+              aria-label="Toggle dark mode"
+            >
+              {darkMode ? '☀️' : '🌙'}
+            </button>
           </li>
         </ul>
       </div>
