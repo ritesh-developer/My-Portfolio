@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Navigation from './components/Navigation';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -23,6 +24,7 @@ function App() {
           <p>&copy; 2025 Ritesh Kumar 🙂  All rights reserved.| Software Engineer & DevOps Enthusiast</p>
         </footer>
       </div>
+      <SpeedInsights />
     </Router>
   );
 }
