@@ -2,7 +2,7 @@
 
 A modern, clean, and responsive personal portfolio built with React and Vite. It showcases projects, skills, and includes a contact form powered by EmailJS.
 
-- Live Demo: Add your live URL here
+- Live Demo: (https://riteshyadav.vercel.app/)
 - Author: Ritesh Kumar
 
 ---
